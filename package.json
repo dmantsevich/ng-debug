@@ -1,0 +1,44 @@
+{
+  "name": "ng-debug",
+  "version": "1.0.0",
+  "description": "Debugger(logger) for Angular v18+ applications",
+  "main": "dist/ng-debug.js",
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "npx eslint src/**/*.ts --fix",
+    "prttier": "npx prettier --write src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmantsevich/ng-debug.git"
+  },
+  "keywords": [
+    "angular",
+    "signals",
+    "eventemitter",
+    "observable",
+    "debugger",
+    "debug",
+    "logger",
+    "logs",
+    "properties",
+    "methods"
+  ],
+  "author": "Dzianis Mantsevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmantsevich/ng-debug/issues"
+  },
+  "homepage": "https://github.com/dmantsevich/ng-debug#readme",
+  "dependencies": {
+    "@angular/core": "^18.0.1",
+    "@typescript-eslint/eslint-plugin": "^7.3.0",
+    "@typescript-eslint/parser": "^7.3.0",
+    "@typescript-eslint/utils": "^7.11.0",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.0"
+  }
+}

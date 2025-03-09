@@ -1,0 +1,61 @@
+{
+  "root": true,
+  "plugins": ["@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": ["error"],
+        "@typescript-eslint/explicit-member-accessibility": [
+          "warn",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "accessors": "explicit",
+              "constructors": "no-public",
+              "methods": "explicit",
+              "properties": "explicit",
+              "parameterProperties": "explicit"
+            }
+          }
+        ],
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/member-ordering": [
+          "error",
+          {
+            "default": {
+              "memberTypes": [
+                "public-decorated-field",
+                "public-static-field",
+                "static-field",
+                "private-field",
+                "public-field",
+                "protected-field",
+                "abstract-field",
+                "constructor",
+                "public-static-method",
+                "public-method",
+                "protected-method",
+                "private-method"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "excludedFiles": ["jest.config.ts", "index.ts", "*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": "latest",
+        "project": "./tsconfig.*?.json",
+        "sourceType": "module"
+      }
+    }
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.base.json"
+  }
+}

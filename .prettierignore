@@ -1,0 +1,17 @@
+# Add files here to ignore them from prettier formatting
+/dist
+/coverage
+/.nx/cache
+.angular
+.gitkeep
+/atlas-ui
+
+# Ignore all SVG, PNG, and other assets
+**/*.svg
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.ico
+**/*.gif
+**/*.json
+**/*.md

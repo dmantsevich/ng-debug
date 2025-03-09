@@ -1,0 +1,7 @@
+node_modules
+
+# Ignore JSON files
+*.json
+
+# Ignore Markdown files
+*.md
